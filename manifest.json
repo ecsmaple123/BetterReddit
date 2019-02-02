@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "BetterReddit",
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+      "matches": ["*://old.reddit.com/*"],
+      "js": ["old.js"]
+    },
+
+    {
+      "matches": ["*://www.reddit.com/*"],
+      "js": ["new.js"]
+    }
+  ]
+}
